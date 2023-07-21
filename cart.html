@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta  charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/df905b9f41.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cart.js"></script>
+</head>
+
+<body> 
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" width="100" height="50" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <div id="site">
+        <header id="masthead">
+            <h1></h1>
+        </header>
+        <div id="content">
+            <h1>Your Shopping Cart</h1>
+            <form id="shopping-cart" action="cart.html" method="post">
+                <table class="shopping-cart">
+                  <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col" colspan="2">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                  </tbody>
+                </table>
+                <p id="sub-total">
+                    <strong>Sub Total</strong>: <span id="stotal"></span>
+                </p>
+                <ul id="shopping-cart-actions">
+                    <li>
+                        <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+                    </li>
+                    <li>
+                        <input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+                    </li>
+                    <li>
+                        <a href="index.html" class="btn">Continue Shopping</a>
+                    </li>
+                    <li>
+                        <a href="checkout.html" class="btn">Go To Checkout</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    
+    </div>
+
+    <!--
+    <section id="page-header" class="about-header">
+        <h2>#Let's_talk</h2>
+        <p>LEAVE A MESSAGE, We love to hear from you!</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"></a><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Product Name</td>
+                    <td>$413</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$413</td>
+                </tr>
+                <tr>
+                    <td><a href="#"></a><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Product Name</td>
+                    <td>$413</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$413</td>
+                </tr>
+                <tr>
+                    <td><a href="#"></a><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Product Name</td>
+                    <td>$413</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$413</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 413</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><strong>$ 413</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section> -->
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" width="160" height="100" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 1016 Anonas, Santa Mesa, Maynila, Kalakhang Maynila</p>
+            <p><strong>Phone:</strong> +63 123 456 7890</p>
+            <p><strong>Hours:</strong> 9:00 am - 10:00 pm, Mon - Fri</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="0">Delivery Information</a>
+            <a href="0">Privacy Policy</a>
+            <a href="0">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="account.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="0">My Wishlist</a>
+            <a href="0">Track My Order</a>
+            <a href="0">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© Tech2 etc</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
